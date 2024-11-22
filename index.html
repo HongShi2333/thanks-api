@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
   <title>感谢名单</title>
   <style>
     body {
@@ -49,6 +48,15 @@
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
+      display: flex;
+      align-items: center;
+    }
+
+    .avatar {
+      width: 40px; /* 设置头像宽度 */
+      height: 40px; /* 设置头像高度 */
+      border-radius: 50%; /* 使头像圆形 */
+      margin-right: 10px; /* 头像与名称之间的间距 */
     }
 
     .visit-button {
@@ -64,12 +72,6 @@
       color: ghostwhite;
       overflow: hidden;
       width: 100px;
-    }
-
-    .visit-button svg {
-      width: 1.2em;
-      height: 1.2em;
-      margin-right: 0.5em;
     }
 
     .visit-button span {
@@ -117,12 +119,17 @@
   <div>
     <h1>感谢名单</h1>
     <h3>感谢这些佬友为本站点提供的API KEY</h3>
+    </>
     <div class="name-container">
-      <div class="name">星空相伴</div>
+      <div class="name">
+        <img class="avatar" src="https://linux.do/user_avatar/linux.do/xingkongxiangban/144/271831_2.png">
+        星空相伴
+      </div>
       <button class="visit-button" onclick="window.location.href='https://linux.do/u/xingkongxiangban/summary'">
-        <span></>Visit</span>
+        <span>Visit</span>
       </button>
     </div>
+    </>
   </div>
 </body>
 </html>
